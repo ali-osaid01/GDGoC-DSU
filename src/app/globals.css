@@ -1,0 +1,433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+
+  
+  .full-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.full-page-content {
+  margin: 15%;
+}
+.custom-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.custom-hover:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+
+.Blue-hover-effect-container {
+    background-color: #ebf4ff;
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.Blue-hover-effect-container::before,
+.Blue-hover-effect-container::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #007bff, transparent);
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.Blue-hover-effect-container::after {
+    filter: blur(8px);
+}
+
+.Blue-hover-effect-container:hover::before,
+.Blue-hover-effect-container:hover::after {
+    animation: rotateBorder 4s linear infinite;
+}
+
+.Blue-hover-effect-container:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+.Blue-hover-effect-container:hover .content-to-hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.Blue-hover-effect-container p {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.Blue-hover-effect-container:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Success-hover-effect-container {
+    background-color: #e6f4ea;
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.Success-hover-effect-container:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+.Success-hover-effect-container:hover .content-to-hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.Success-hover-effect-container p {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.Success-hover-effect-container:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Danger-hover-effect-container {
+    background-color: #f8d7da;
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.Danger-hover-effect-container:hover {
+    background-color: #dc3545;
+    transform: scale(1.05);
+}
+
+.Danger-hover-effect-container:hover .content-to-hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.Danger-hover-effect-container p {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.Danger-hover-effect-container:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bg-image {
+    background-image: url('/Sides.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    background-size: cover; /* By default, cover for larger screens */
+}
+
+@media (max-width: 768px) {
+    .bg-image {
+        background-size: contain; /* For smaller screens, use contain */
+        height: auto; /* Reset height to auto */
+    }
+}
+
+.bg-image2 {
+    background-image: url('/Texture.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    background-size: cover; /* By default, cover for larger screens */
+}
+
+@media (max-width: 768px) {
+    .bg-image2 {
+        background-size: contain; /* For smaller screens, use contain */
+        height: auto; /* Reset height to auto */
+    }
+}
+
+
+.carousel-next-button, .carousel-prev-button {
+    color: black !important;
+}
+
+.carousel-dot {
+    background-color: black !important;
+}
+
+.Success-hover-effect-container::before,
+.Success-hover-effect-container::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #28a745, transparent);
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.Success-hover-effect-container::after {
+    filter: blur(8px);
+}
+
+.Success-hover-effect-container:hover::before,
+.Success-hover-effect-container:hover::after {
+    animation: rotateBorder 4s linear infinite;
+}
+
+.no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.Danger-hover-effect-container::before,
+.Danger-hover-effect-container::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #dc3545, transparent);
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.Danger-hover-effect-container::after {
+    filter: blur(8px);
+}
+
+.Danger-hover-effect-container:hover::before,
+.Danger-hover-effect-container:hover::after {
+    animation: rotateBorder 4s linear infinite;
+}
+
+.logo-container {
+    margin: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .logo-slider {
+    display: flex;
+    animation: scrollLogo 20s linear infinite;
+  }
+  
+  .logo-item {
+    flex: 0 0 auto;
+    padding: 0 15px;
+  }
+  
+  @keyframes scrollLogo {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .logo-slider {
+      display: block;
+    }
+    
+    .logo-container {
+      overflow-x: scroll; 
+      scrollbar-width: none; 
+      -ms-overflow-style: none; 
+    }
+    
+    .logo-container::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .logo-item {
+      padding: 0 10px; 
+      display: inline-block;
+    }
+  }
+  
+  .scrollable-content {
+    position: relative; 
+    overflow-y: auto;
+    max-height: 100vh; 
+  }
+  .toast-relative {
+    position: fixed;
+    z-index: 1050;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .imgResponsive {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .imgResponsive {
+      width: 69%;
+      margin-left: 86px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .imgpadding {
+      padding: 40px;
+    }
+  }
+
+  .fullPage{
+    margin: 13%;
+  }
+
+  .forP{
+    display: flex;
+    justify-content: end;
+    margin-top: -6%;
+  }
+
+  .counters-section {
+    background-image: url('/counterBg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .counters-section .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counters-section .col-12 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Center the content horizontally and vertically */
+.vh-100 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.font-manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* Custom styles for the navbar */
+@media (max-width: 640px) { /* Tailwind CSS sm breakpoint */
+  .custom-collapse .custom-nav {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+
+  .custom-nav-item {
+      width: 100%;
+  }
+
+  .custom-nav-item .nav-link {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+  }
+}

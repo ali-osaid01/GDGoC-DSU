@@ -1,0 +1,170 @@
+/* team.css */
+
+/* Adjust tab text size for screens smaller than 400px */
+@media (max-width: 400px) {
+  .tab-item {
+    font-size: 10px; /* Adjust the font size as needed */
+  }
+}
+
+/* Adjust tab size for screens smaller than 400px */
+@media (max-width: 400px) {
+  .tab-item {
+    padding: 6px 8px; /* Adjust padding as needed */
+  }
+}
+
+.team-navbar{
+  margin-top: 5%;
+}
+
+
+@media (max-width: 576px) {
+  .team-navbar{
+    margin-top: 10%;    
+  } 
+}
+
+/* Adjust tab size for screens smaller than 400px */
+@media (max-width: 400px) {
+  .team-navbar{
+    margin-top: 10%;
+  }  
+}
+
+.quote-image {
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px; /* Ensure it doesn't exceed a certain maximum width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+@media (max-width: 576px) {
+  .quote-image {
+    width: 120%; /* Adjust width as needed */
+    max-width: 600px; /* Ensure it doesn't exceed a certain maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves as a block element */
+    margin-top: -100px;
+ }
+
+ .quote-image-founder {
+  width: 132%; /* Adjust width as needed */
+  max-width: 600px; /* Ensure it doesn't exceed a certain maximum width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves as a block element */
+  margin-top: -110px;
+}
+
+.team-card{
+  margin-top: -30px;
+}
+
+
+}
+
+@media (max-width: 400px) {
+  .quote-image {
+    width: 130%; /* Adjust width as needed */
+    max-width: 800px; /* Ensure it doesn't exceed a certain maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves as a block element */
+    margin-top: -100px;
+ }
+
+ .quote-image-founder {
+  width: 160%; /* Adjust width as needed */
+  max-width: 390px; /* Ensure it doesn't exceed a certain maximum width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves as a block element */
+  margin-top: -150px;
+}
+
+.team-card{
+  margin-top: -50px;
+}
+
+
+}
+@media (max-width: 576px) {
+  .founder-container {
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .founder-content {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .founder-name,
+  .founder-designation {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+/* Media query for screens up to 400px */
+@media (min-width: 300px) {
+  .founder-container {
+    padding: 1rem;
+  }
+
+  .founder-image img {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px; /* Adjust size for smaller screens */
+  }
+  
+  .founder-name {
+    font-size: 1rem;
+  }
+
+  .founder-designation {
+    font-size: 0.75rem;
+  }
+
+  .founder-description {
+    font-size: 0.625rem;
+  }
+}
+
+
+
+.leads-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.years-bar {
+  position: absolute;
+  left: -1rem; /* Adjust this value as necessary */
+}
+
+@media (max-width: 576px) {
+  .leads-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .years-bar {
+    position: static;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .leads-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .years-bar {
+    position: static;
+    margin-left: -30px;
+    justify-content: space-around;
+    text-align: center;
+  }
+}

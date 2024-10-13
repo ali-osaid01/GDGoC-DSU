@@ -1,0 +1,13 @@
+/* Adjust tab size for screens smaller than 400px */
+@media (max-width: 400px) {
+    .form-div{
+      margin-top: -20%;
+    }  
+  }
+
+
+  @media (min-width: 401px) and (max-width: 576px) {
+    .form-div{
+      margin-top: -20%;
+    }  
+  }
